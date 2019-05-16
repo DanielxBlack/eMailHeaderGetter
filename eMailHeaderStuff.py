@@ -70,7 +70,14 @@ def getIPs():
     print("")
 
 
+# Create a function to extract the email subject line
+def getSubject():
+    exampleString = caca
+    derp = re.findall(r"[\n\r]Subject:([^\n\r]*)", exampleString)
+    print(f"[+] Subject: {derp}")
+    print("")
 
 
 getAddresses()
 getIPs()
+getSubject()
